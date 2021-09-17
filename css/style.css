@@ -43,3 +43,45 @@ img {
     opacity: 1;
     transform: scale(1);
 }
+
+[data-control="slide"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #FB5;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -999px;
+    margin: 5px;
+}
+
+[data-control="slide"] li.active a, 
+[data-control="slide"] li a:hover {
+    background: #E54;
+}
+
+.arrow-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-nav button {
+    background: #FB5;
+    width: 80px;
+    height: 38px;
+    margin: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow-nav button:hover {
+    background: #E54;
+}
